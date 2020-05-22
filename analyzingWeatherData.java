@@ -24,7 +24,7 @@ public class Part1 {
             else{
                 double currentTemp = Double.parseDouble(record.get("TemperatureF"));
                 double coldestTemp = Double.parseDouble(coldestRecordSoFar.get("TemperatureF"));
-                if(coldestTemp > currentTemp && currentTemp != -9999){//-999 means there wasnt a valid reading
+                if(coldestTemp > currentTemp && currentTemp != -9999){//-9999 means there wasnt a valid reading
                     coldestRecordSoFar = record;
                 }
             }            
